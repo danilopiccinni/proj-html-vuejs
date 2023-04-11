@@ -1,4 +1,5 @@
 <script>
+    import AppFooter from './components/AppFooter.vue'
     import AppSection5 from './components/AppSection5.vue';
     import AppSection4 from './components/AppSection4.vue';
     import AppSection3 from './components/AppSection3.vue';
@@ -14,6 +15,7 @@
             }
         },
         components : {
+            AppFooter,
             AppSection5,
             AppSection4,
             AppSection3,
@@ -44,6 +46,8 @@
     <AppSection4></AppSection4>
 
     <AppSection5></AppSection5>
+
+    <AppFooter></AppFooter>
 
 </template>
 
