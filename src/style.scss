@@ -24,6 +24,11 @@
   text-decoration: none;
   border-radius: 15px;
   padding: 5px 25px;
+
+  &:hover {
+    color: white;
+    background-color: #2e9cf0;
+  }
 }
 
 // stilizazzione container sezioni stette

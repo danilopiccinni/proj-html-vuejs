@@ -27,6 +27,11 @@
     color: white;
     background-color: #1675BF;
 
+    &:hover {
+        cursor: pointer;
+        background-color: #2e9cf0;
+    }
+
     span {
         text-transform: uppercase;
     }
