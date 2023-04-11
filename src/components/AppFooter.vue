@@ -38,14 +38,14 @@
 
 <template>
     <footer>
-        <div class="container">
+        <div class="container flex-column flex-lg-row">
             <div class="column-about">
                 <strong> {{ columnAbout.title }}</strong>
                 <p>{{ columnAbout.content }}</p>
                 <img :src="columnAbout.image" alt="">
             </div>
 
-            <div class="cont-columns">
+            <div class="cont-columns flex-column gap-5 flex-md-row">
                 <div v-for="column in columns" class="column">
                     <strong> {{ column.title }}</strong>
                     <ul>
@@ -78,7 +78,7 @@ img {
 
 .cont-columns {
     display: flex;
-    gap: 200px;
+
 }
 
 .column {

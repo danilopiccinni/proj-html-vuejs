@@ -57,9 +57,10 @@
     .cont-cards {
         height: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        gap: 15px;
 
         
     }
@@ -67,11 +68,13 @@
     ._card {
         display: flex;
         flex-direction: column;
-
-        width: 300px;
-        height: 500px;
+ 
+        width: calc(100% / 3 - 15px / 3 * 2);
+        min-width: 300px;
 
         text-align: center;
+
+        padding-bottom: 15px;
 
         border: 10px solid #f2f5f8;
     }

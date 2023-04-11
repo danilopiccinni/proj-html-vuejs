@@ -39,6 +39,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
         gap: 20px;
         background-color: #6abf16;
 
@@ -48,6 +49,8 @@
     .top {
         color: white;
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 25px;
     }
 

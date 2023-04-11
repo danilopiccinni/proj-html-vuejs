@@ -17,7 +17,7 @@
 
 <template>
     <nav>
-        <div class="container cont-nav">
+        <div class="container flex-column flex-lg-row cont-nav">
             <div>
                 <img src="/img/avada-movers-logo.png" alt="">
             </div>
@@ -25,7 +25,7 @@
             <div class="nav-dx">
                 <ul>
                     <li v-for="link in navLinks"> {{ link }}</li>
-                    <a class="link" href="">free quote</a>
+                    <a class="link d-none d-lg-block" href="">free quote</a>
                 </ul>
 
             </div>

@@ -31,7 +31,7 @@
                 <h6>happy customers</h6>
                 <h3 class="section-title">testimonials</h3>
             </div>
-            <div class="cont-cards">
+            <div class="cont-cards flex-column flex-md-row row-cols-sm-1 row-cols-md-4">
                 <div v-for="person in persons" class="_card">
                     <img :src="person.image" alt="">
                     <h5> {{ person.name }}</h5>
@@ -62,6 +62,7 @@ img {
 .cont-section4 {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 50px;
     text-align: center;
 
