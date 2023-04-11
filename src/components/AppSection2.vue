@@ -77,6 +77,14 @@
         padding-bottom: 15px;
 
         border: 10px solid #f2f5f8;
+
+        transition: 1s;
+
+        &:hover {
+            border: 10px solid #6abf16;
+            transform: scale(105%);
+        }
+
     }
 
     img {
