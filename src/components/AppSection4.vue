@@ -26,10 +26,10 @@
 
 <template>
     <div class="section4">
-        <div class="container">
+        <div class="container padding cont-section4">
             <div>
                 <h6>happy customers</h6>
-                <h3>testimonials</h3>
+                <h3 class="section-title">testimonials</h3>
             </div>
             <div class="cont-cards">
                 <div v-for="person in persons" class="_card">
@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div>
-                <a href="">read more testmonials</a>
+                <a class="link" href="">read more testmonials</a>
             </div>
         </div>
     </div>
@@ -49,7 +49,6 @@
 <style scoped lang="scss">
 
 .section4 {
-    padding: 150px;
     background-image: url(/img/avada-movers-testimonial-background.jpg);
     background-repeat: no-repeat;
     background-position: 50% 25%;
@@ -60,12 +59,12 @@ img {
     border-radius: 50%;
 }
 
-.container {
+.cont-section4 {
     display: flex;
     flex-direction: column;
     gap: 50px;
-
     text-align: center;
+
 
 }
 .cont-cards {
@@ -89,12 +88,6 @@ h6 {
     color: #333333;
 }
 
-h3 {
-    text-transform: capitalize;
-    color: #6abf16;
-    font-weight: bold;
-    font-size: 40px;
-}
 
 h5 {
     color: #1675bf;
@@ -105,22 +98,5 @@ h5 {
 p {
     font-size: 12px;
 }
-
-a {
-    color: white;
-    text-decoration: none;
-
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: bold;
-
-    background-color: #1675bf;
-    padding: 8px 20px;
-    border-radius: 15px;
-}
-
-
-
-
 
 </style>

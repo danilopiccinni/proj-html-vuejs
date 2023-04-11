@@ -15,13 +15,13 @@
 
 <template>
     <div class="section3">
-        <div class="container cont-section3">
+        <div class="container padding cont-section3">
             <div class="_card">
                 <h6> {{ card.smallTitle }}</h6>
                 <h3> {{ card.title }}</h3>
                 <hr>
                 <p> {{ card.description }}</p>
-                <a href="">get a free quote now</a>
+                <a class="link" href="">get a free quote now</a>
             </div>
         </div>
     </div>
@@ -38,11 +38,11 @@
     background-position: top;
 }
 
-.container {
+.cont-section3 {
+    height: 100%;
     display: flex;
     justify-content: end;
-    padding-top: 250px;
-
+    align-items: center;
 }
 
 ._card {
@@ -58,18 +58,6 @@
     padding: 25px;
 
     color: white;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-    align-self: center;
-    background-color: #1675bf;
-    padding: 5px 15px;
-    border-radius: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 12px;
 }
 
 h3 {

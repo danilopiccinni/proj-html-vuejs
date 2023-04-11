@@ -13,3 +13,41 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+// stilizazzione dei bottoni blu
+.link {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  align-self: center;
+  color: white;
+  background-color: #1675bf;
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 5px 25px;
+}
+
+// stilizazzione container sezioni stette
+.small-container {
+  height: 100%;
+  max-width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+// stilizazzione titolo di ogni sezione
+.section-title {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #6abf16;
+}
+
+// padding verticale usato per ogni sezione
+.padding {
+  padding: 150px 0;
+}

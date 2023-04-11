@@ -9,8 +9,6 @@
                     'FAQ',
                     'blog',
                     'contact',
-                    'FREE QOUTE',
-
                 ]
             }
         }
@@ -24,10 +22,12 @@
                 <img src="/img/avada-movers-logo.png" alt="">
             </div>
     
-            <div>
+            <div class="nav-dx">
                 <ul>
                     <li v-for="link in navLinks"> {{ link }}</li>
+                    <a class="link" href="">free quote</a>
                 </ul>
+
             </div>
         </div>
     </nav>
@@ -53,11 +53,7 @@
         text-transform: capitalize;
     }
 
-    li:last-child {
-        color: white;
-        background-color: #1675BF;
-        border-radius: 15px;
-        padding: 5px 15px ;
-    }
+    
+
 }
 </style>

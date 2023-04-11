@@ -26,27 +26,26 @@
 
 <template>
     <div class="section2">
-        <div v-for="card in cards" class="_card">
-            <img :src="card.image" alt="">
-            <h5>{{ card.title }}</h5>
-            <p>{{ card.description }}</p>
-            <a href="">read more</a>
+        <div class="container padding cont-section2">
+            <div v-for="card in cards" class="_card">
+                <img :src="card.image" alt="">
+                <h5>{{ card.title }}</h5>
+                <p>{{ card.description }}</p>
+                <a class="link" href="">read more</a>
+            </div>
         </div>
-
     </div>
-
-
 </template>
 
 <style scoped lang="scss">
 
-    .section2 {
+    .cont-section2 {
+        height: 100%;
         display: flex;
-        justify-content: center;
-        gap: 50px;
+        justify-content: space-between;
+        align-items: center;
         flex-wrap: wrap;
 
-        padding: 150px 0;
         
     }
 
@@ -73,21 +72,5 @@
         padding-top: 30px;
         text-transform: uppercase;
     }
-
-    a {
-        font-size: 12px;
-        font-weight: bold;
-        text-transform: uppercase;
-        align-self: center;
-        color: white;
-        background-color: #1675bf;
-        text-decoration: none;
-        border-radius: 15px;
-        padding: 5px 15px;
-    }
-
-
-
-
 
 </style>
