@@ -66,10 +66,7 @@ h3 {
     font-weight: bold;
 }
 
-h6 {
-    text-transform: uppercase;
-    font-size: 10px;
-}
+
 
 
 

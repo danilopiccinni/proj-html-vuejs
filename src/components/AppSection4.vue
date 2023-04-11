@@ -82,13 +82,6 @@ img {
     text-align: center;
 }
 
-h6 {
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #333333;
-}
-
-
 h5 {
     color: #1675bf;
     text-transform: capitalize;

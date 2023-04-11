@@ -36,9 +36,14 @@ header {
     background-size: cover;
 }
 .titolo {
-    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     text-transform: uppercase;
-    padding: 200px;
+
 }
 
 h1 {

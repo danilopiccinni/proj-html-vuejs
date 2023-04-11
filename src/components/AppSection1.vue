@@ -11,7 +11,7 @@
 <template>
     <div class="section1">
         <div class="small-container">
-            <span>headache free</span>
+            <h6>headache free</h6>
             <div>
                 <h3 class="section-title">award winning</h3>
                 <h3 class="section-title">moving company</h3>

@@ -27,11 +27,17 @@
 <template>
     <div class="section2">
         <div class="container padding cont-section2">
-            <div v-for="card in cards" class="_card">
-                <img :src="card.image" alt="">
-                <h5>{{ card.title }}</h5>
-                <p>{{ card.description }}</p>
-                <a class="link" href="">read more</a>
+            <div>
+                <h6>happy customers</h6>
+                <h3 class="section-title">full-service solution</h3>
+            </div>
+            <div class="cont-cards">
+                <div v-for="card in cards" class="_card">
+                    <img :src="card.image" alt="">
+                    <h5>{{ card.title }}</h5>
+                    <p>{{ card.description }}</p>
+                    <a class="link" href="">read more</a>
+                </div>
             </div>
         </div>
     </div>
@@ -39,7 +45,16 @@
 
 <style scoped lang="scss">
 
-    .cont-section2 {
+.cont-section2 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+
+}
+
+
+    .cont-cards {
         height: 100%;
         display: flex;
         justify-content: space-between;
