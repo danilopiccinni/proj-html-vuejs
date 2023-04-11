@@ -23,7 +23,7 @@
 <template>
     <div class="cont">
         <div class="top">
-            <span v-for="link in links">{{ link }}</span>
+            <span v-for="link in links" v-html="link"></span>
         </div>
     
         <div class="bottom">
