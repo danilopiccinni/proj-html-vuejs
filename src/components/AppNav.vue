@@ -2,6 +2,9 @@
     export default {
         data() {
             return {
+
+                activeIndex : 0,
+
                 navLinks: [
                     'home',
                     'rates',
@@ -10,6 +13,12 @@
                     'blog',
                     'contact',
                 ]
+            }
+        },
+
+        methods : {
+            giveActive(index) {
+                this.activeIndex = index
             }
         }
     }
@@ -24,7 +33,7 @@
     
             <div class="nav-dx">
                 <ul>
-                    <li v-for="link in navLinks"> {{ link }}</li>
+                    <li v-for="link,index in navLinks" @click="giveActive(index)" :class="activeIndex == index ? 'active' : ''"> {{ link }}</li>
                     <a class="link d-none d-lg-block" href="">free quote</a>
                 </ul>
 
@@ -51,9 +60,19 @@
         font-size: 12px;
         font-weight: bold;
         text-transform: capitalize;
+
+        transition: 0.5s;
+
+        &:hover {
+            scale: 115%;
+            cursor: pointer;
+        }
+
     }
 
-    
+    .active{
+        color: #6abf16;
+    }
 
 }
 </style>
