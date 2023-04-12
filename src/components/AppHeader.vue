@@ -4,11 +4,21 @@ import AppNav from './AppNav.vue';
     export default {
         data() {
             return {
-
+                pulseOn : false
             }
         },
         components : {
             AppNav,
+        },
+
+        methods : {
+            activePulse() {
+                this.pulseOn = true
+            },
+
+            deactivePulse() {
+                this.pulseOn = false
+            } 
         }
     }
 </script>
@@ -17,9 +27,9 @@ import AppNav from './AppNav.vue';
     <header>
         <AppNav></AppNav>
 
-        <div class="titolo">
+        <div class="titolo" @mouseover="activePulse()" @mouseleave="deactivePulse()" :class="pulseOn == true ? 'animate__animated animate__jello' : ''">
             <h6 class="animate__animated animate__zoomInDown">moving without the hassle</h6>
-            <h1 class="animate__animated animate__zoomIn">we make it simple</h1>
+            <h1 class="animate__animated animate__zoomIn" >we make it simple</h1>
             <h6 class="animate__animated animate__zoomInUp">professional service with quality and customer satisfaction</h6>
         </div>
     </header>
