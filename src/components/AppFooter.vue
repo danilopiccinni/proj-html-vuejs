@@ -63,6 +63,8 @@
     display: flex;
     gap: 100px;
     padding: 100px 0;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .column-about {
@@ -78,6 +80,7 @@ img {
 
 .cont-columns {
     display: flex;
+    
 
 }
 
@@ -92,7 +95,7 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-left: 0;
+    padding-left: 15px;
 }
 
 li {
