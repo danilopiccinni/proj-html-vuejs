@@ -2,6 +2,9 @@
     export default {
         data() {
             return {
+
+                active : null,
+
                 cards: [ 
                     {
                         image : '/img/avada-movers-serviceonephoto-final.jpg',
@@ -32,7 +35,7 @@
                 <h3 class="section-title">full-service solution</h3>
             </div>
             <div class="cont-cards">
-                <div v-for="card in cards" class="_card">
+                <div v-for="card,index in cards" class="_card" @mouseover="active=index" @mouseleave="active=null" :style="index == active || active==null ? { opacity: 1}: {opacity : 0.5} ">
                     <img :src="card.image" alt="">
                     <h5>{{ card.title }}</h5>
                     <p>{{ card.description }}</p>
@@ -50,6 +53,7 @@
     flex-direction: column;
     gap: 50px;
     text-align: center;
+
 
 }
 
