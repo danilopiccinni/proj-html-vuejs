@@ -47,7 +47,9 @@ header {
     background-size: cover;
 }
 .titolo {
-    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    height: calc(100% - 100px);
     display: flex;
     flex-direction: column;
     justify-content: center;

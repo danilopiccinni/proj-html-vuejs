@@ -44,6 +44,10 @@
 
 <style scoped lang="scss">
 
+nav {
+    height: 100px;
+}
+
 .cont-nav {
     display: flex;
     justify-content: space-between;
