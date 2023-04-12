@@ -35,7 +35,7 @@
                 <h3> {{ card.title }}</h3>
                 <hr>
                 <p> {{ card.description }}</p>
-                <a class="link" href="">get a free quote now</a>
+                <a  class="link animate__animated animate__pulse animate__infinite" href="">get a free quote now</a>
             </div>
         </div>
     </div>
