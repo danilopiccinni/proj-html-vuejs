@@ -166,7 +166,7 @@
                     <div v-for="(person, index) in persons" :key="index" class="_card">
                         <img :src="person.image" alt="immagine">
                         <h5> {{ person.name }}</h5>
-                        <p> <em>"{{ person.description }}"</em> </p>
+                        <p class="d-none d-lg-block"> <em>"{{ person.description }}"</em> </p>
                     </div>
                 </AppSlider>
 
