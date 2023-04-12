@@ -1,17 +1,28 @@
 <script>
+import 'animate.css'
     export default {
         data() {
             return {
+                animationOn : false
+            }
+        },
 
+        methods : {
+            activeAnimation() {
+                this.animationOn = true
+            },
+
+            deactiveAnimation() {
+                this.animationOn = false
             }
         }
     }
 </script>
 
 <template>
-    <div class="banner-blue">
-        <i class="fa-regular fa-paper-plane"></i>
-        <span>get a free quote online now!</span>
+    <div class="banner-blue" @mouseover="activeAnimation()" @mouseleave="deactiveAnimation()">
+        
+        <span :class="animationOn == true ? 'animate__animated animate__pulse animate__infinite' : ''"><i class="fa-regular fa-paper-plane" ></i> get a free quote online now!</span>
     </div>
 </template>
 
