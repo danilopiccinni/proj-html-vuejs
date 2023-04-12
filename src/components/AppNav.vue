@@ -34,7 +34,7 @@
             <div class="nav-dx">
                 <ul>
                     <li v-for="link,index in navLinks" @click="giveActive(index)" :class="activeIndex == index ? 'active' : ''"> {{ link }}</li>
-                    <a class="link d-none d-lg-block" href="">free quote</a>
+                    <a class="link d-none d-lg-block animate__animated animate__pulse animate__infinite" href="">free quote</a>
                 </ul>
 
             </div>
