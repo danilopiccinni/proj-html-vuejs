@@ -1,4 +1,5 @@
 <script>
+import 'animate.css'
 import AppNav from './AppNav.vue';
     export default {
         data() {
@@ -17,9 +18,9 @@ import AppNav from './AppNav.vue';
         <AppNav></AppNav>
 
         <div class="titolo">
-            <h6>moving without the hassle</h6>
-            <h1>we make it simple</h1>
-            <h6>professional service with quality and customer satisfaction</h6>
+            <h6 class="animate__animated animate__zoomInDown">moving without the hassle</h6>
+            <h1 class="animate__animated animate__zoomIn">we make it simple</h1>
+            <h6 class="animate__animated animate__zoomInUp">professional service with quality and customer satisfaction</h6>
         </div>
     </header>
 
