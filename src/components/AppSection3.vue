@@ -2,6 +2,8 @@
     export default {
         data() {
             return {
+                animationOn : false,
+
                 card: 
                     {
                         smallTitle : 'we remove the headache from moving',
@@ -9,14 +11,26 @@
                         description : 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, veniam quaerat ex dolor nemo odit sapiente qui quibusdam deleniti obcaecati autem earum!',
                     },
             }
+        },
+
+        methods : {
+            
+            activeAnimation() {
+                    this.animationOn = true
+                },
+    
+                deactiveAnimation() {
+                    this.animationOn = false
+                }
         }
+
     }
 </script>
 
 <template>
-    <div class="section3">
+    <div class="section3" @mouseover="activeAnimation()" @mouseleave="deactiveAnimation()">
         <div class="container padding cont-section3">
-            <div class="_card">
+            <div class="_card" :class="animationOn == true ? 'animate__animated animate__bounceInLeft' : ''">
                 <h6> {{ card.smallTitle }}</h6>
                 <h3> {{ card.title }}</h3>
                 <hr>
