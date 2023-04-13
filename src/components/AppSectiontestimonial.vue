@@ -116,8 +116,8 @@
                 </div>
 
                 <div class="cont-button">
-                    <div @click="indietro()"><i class="fa-solid fa-circle-chevron-left"></i></div>
-                    <div @click="avanti()"><i class="fa-solid fa-circle-chevron-right"></i></div>
+                    <div class="button" @click="indietro()"><i class="fa-solid fa-circle-chevron-left"></i></div>
+                    <div class="button" @click="avanti()"><i class="fa-solid fa-circle-chevron-right"></i></div>
                 </div>
             </div>
             <div>
@@ -156,17 +156,18 @@
     align-items: center;
     width: 100%;
 
-    
     overflow-x: scroll;
     
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none; 
 
-
 }
 
-.cont-title {
 
+
+.button:hover {
+    color: #228ddf;
+    cursor: pointer;
 }
 
 .cont-button{
@@ -209,6 +210,14 @@
     align-items: center;
     gap: 20px;
     text-align: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover img {
+        border: 5px solid #1675bf;
+    }
 }
 
 .cont-img {
@@ -219,6 +228,11 @@
 img {
     width: 100px;
     border-radius: 50%;
+
+    transition: 0.1s;
+    transition-timing-function: ease-in-out;
+
+     
 }
 
 h5 {
@@ -230,6 +244,8 @@ h5 {
 p {
     font-size: 12px;
 }
+
+
 
 
 </style>
