@@ -49,7 +49,7 @@
                 <div v-for="column in columns" class="column">
                     <strong> {{ column.title }}</strong>
                     <ul>
-                        <li v-for="link in column.links">{{ link }}</li>
+                        <li v-for="link in column.links"><a :href="link">{{ link }}</a> </li>
                     </ul>
                 </div>
             </div>
