@@ -1,4 +1,5 @@
 <script>
+    import AppSectiontestimonial from './components/AppSectiontestimonial.vue';
     import AppBannerFinal from './components/AppBannerFinal.vue';
     import AppFooter from './components/AppFooter.vue';
     import AppSection5 from './components/AppSection5.vue';
@@ -16,6 +17,7 @@
             }
         },
         components : {
+            AppSectiontestimonial,
             AppBannerFinal,
             AppFooter,
             AppSection5,
@@ -45,7 +47,9 @@
 
     <AppSection3></AppSection3>
 
-    <AppSection4></AppSection4>
+
+
+    <AppSectiontestimonial></AppSectiontestimonial>
 
     <AppSection5></AppSection5>
 
