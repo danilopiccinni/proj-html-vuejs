@@ -81,18 +81,24 @@
         padding-bottom: 15px;
 
         border: 10px solid #f2f5f8;
-
         transition: 1s;
+        transition-timing-function: ease;
+        overflow: hidden;
 
         &:hover {
             border: 10px solid #6abf16;
             transform: scale(105%);
+ 
         }
 
+        &:hover img {
+            scale: 110%;
+        }
     }
 
     img {
         border-bottom: 10px solid #f2f5f8;
+        transition: 1s;
     }
 
     h5 {
