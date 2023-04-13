@@ -13,7 +13,7 @@
         <div class="container banner">
             <div class="banner-sx">
                 <i class="fa-solid fa-phone-flip"></i>
-                <span>Call us for a Free Quote: 1.800.555.6789</span>
+                <span>Call us for a Free Quote: <span class="numero-tel">1.800.555.6789</span> </span>
             </div>
     
             <div class="banner-dx">
@@ -51,6 +51,18 @@
     display: flex;
     gap: 20px;
     font-size: 12px;
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+span:hover {
+    cursor: pointer;
+}
+
+span:hover .numero-tel {
+    text-decoration: underline;
 }
 
 
